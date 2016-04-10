@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "++++++++++++++++++++++++++++++++++++++++++"
-echo "+  cryptolink wireless starter script    +"
-echo "++++++++++++++++++++++++++++++++++++++++++"
+#echo "++++++++++++++++++++++++++++++++++++++++++"
+#echo "+  smokelink wireless starter script    +"
+#echo "++++++++++++++++++++++++++++++++++++++++++"
 
 
 /etc/init.d/networking restart > /dev/null 2>&1
@@ -18,5 +18,6 @@ service tor stop > /dev/null 2>&1
 service motion stop > /dev/null 2>&1
 service lighttpd start > /dev/null 2>&1
 service polipo stop > /dev/null 2>&1
+service ntop stop > /dev/null 2>&1
 
 #banner smokelink started
